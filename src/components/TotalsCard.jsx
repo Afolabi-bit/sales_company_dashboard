@@ -2,7 +2,7 @@ import React from "react";
 
 const TotalsCard = ({ card }) => {
   return (
-    <div className="w-[197px] h-[182px] p-[10px] items-center justify-center inline-flex flex-col justify-between rounded-[14px] border-m bg-white ">
+    <div className="w-[197px] h-[182px] p-[10px] items-center inline-flex flex-col justify-between rounded-[14px] border-m bg-white ">
       <div className="w-full flex justify-between items-center">
         <img src={card.icon} alt="icon" />
         <img
