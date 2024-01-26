@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --sidebar-bg: #f7f8fa;
+  --main-content-bg: #fafafa;
+  --green: #34caa5;
+  --form-border: #dadddd;
+  --profile-name-color: #26282c;
+  --profile-email-color: #787486;
+  --header-line-bg: #e5eaef;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  width: calc(100% - 80px) !important;
+  overflow-x: hidden;
+}
+
+#btn-wrapper > button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.jakarta {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.border-m {
+  border: 1px solid #edf2f7;
+}
+
+.bar-wrapper img.light,
+.bar-wrapper img.dark {
+  width: 30px;
+  height: inherit;
+  object-fit: cover;
+  object-position: top center;
+  transition: opacity 0.2s ease;
+}
+
+.bar-wrapper .active-month .dark {
+  opacity: 1;
+}
+
+.bar-wrapper .active-month .light {
+  opacity: 0;
+}
+
+.tooltip {
+  transition: opacity 0.3s ease-out;
+}
+
+.bar-wrapper:hover img.light {
+  opacity: 0;
+}
+
+.bar-wrapper:hover img.dark,
+.bar-wrapper:hover .tooltip {
+  opacity: 1;
+}
+
+o-visible {
+  overflow: visible !important;
+}
