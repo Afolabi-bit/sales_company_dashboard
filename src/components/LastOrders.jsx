@@ -22,7 +22,7 @@ const Orders = ({ url, name, date, amount, status }) => {
       {/* Amount */}
       <div className="w-[120px]">
         <p className="text-[16px] font-medium leading-[24px] text-[#0D062D]">
-          {amount}
+          ${amount}
         </p>
       </div>
 
