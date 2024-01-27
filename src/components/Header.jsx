@@ -40,11 +40,11 @@ const Header = () => {
     <>
       <header className="flex h-[70px] gap-[18px] self-stretch-0 items-center justify-between px-[18px]">
         {/* Heading & Search */}
-        <div className="w-[806px] h-full flex justify-between items-center md:w-3/5 ">
-          <h2 className="text-[20px] font-[600] leading-[28px] md:text-[17px]  ">
+        <div className=" h-full flex justify-between items-center md:w-3/5 lg:w-[806px]">
+          <h2 className=" font-[600] leading-[28px] md:text-[17px] lg:text-[20px] ">
             Dashboard
           </h2>
-          <form className="h-[48px] w-[333px] pl-[16px] gap-[8px] flex items-center border-m bg-white rounded-[24px] md:w-[270px] ">
+          <form className="h-[48px] pl-[16px] gap-[8px] flex items-center border-m bg-white rounded-[24px] md:w-[270px] lg:w-[333px] ">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102315/asset/Icon_-_Search_sonviw.svg"
@@ -60,10 +60,10 @@ const Header = () => {
         </div>
 
         {/* Profile */}
-        <div className="w-[404px] h-full flex gap-[15px] items-center md:w-2/5 ">
+        <div className=" h-full flex gap-[15px] items-center md:w-2/5 lg:w-[404px]">
           {/* Calender & Notification button */}
-          <div className="flex gap-[15px] w-[253px] items-center md:w-4/5  md:justify-evenly ">
-            <div className="flex gap-[7px] ">
+          <div className="flex gap-[15px] items-center md:w-4/5  lg:w-[253px]">
+            <div className="flex gap-[5px] ">
               <img
                 src={
                   "https://res.cloudinary.com/dkpoealta/image/upload/v1706102317/asset/solar_calendar-linear_z4y9iu.svg"
@@ -71,7 +71,7 @@ const Header = () => {
                 alt=""
                 className="w-[20px] h-[20px]"
               />
-              <p className="text-[13px] font-[500] inter ">
+              <p className="text-[14px] font-[500] inter ">
                 <span>{date.m}</span> <span>{date.d}</span>
                 {", "}
                 <span>{date.y}</span>
@@ -90,8 +90,9 @@ const Header = () => {
           </div>
 
           {/* Profile picture & name */}
-          <div className="border-m w-[199px] rounded-[28px] gap-[10px] py-[6px] px-[8px] flex justify-center items-center cursor-pointer hover:bg-[#edf2f7] transition md:w-[40px] md:hover:opacity-95 md:h-[40px]">
-            <div className="flex items-center gap-[5px] ">
+          <div className="border-m  rounded-[28px] gap-[10px]  flex justify-center items-center cursor-pointer  transition w-[40px] md:hover:opacity-95 h-[40px] lg:w-[190px] lg:justify-between lg:hover:opacity-[1] lg:hover:bg-[#edf2f7]">
+            <div className="flex items-center gap-[7px] justify-between">
+              {/* Profile picture */}
               <div className="h-[38px] w-[38px]">
                 <img
                   src={
@@ -101,7 +102,9 @@ const Header = () => {
                   className="w-full h-full"
                 />
               </div>
-              <div className="md:hidden">
+
+              {/* Name */}
+              <div className="hidden lg:block">
                 <h3 className="text-[14px] font-normal text-[var(--profile-name-color)] text-right ">
                   Justin Bergson
                 </h3>
@@ -110,7 +113,9 @@ const Header = () => {
                 </p>
               </div>
             </div>
-            <button className="w-[20px] h-[20px] md:hidden">
+
+            {/* Caret icon */}
+            <button className="w-[20px] h-[20px] hidden lg:block">
               <img
                 src={
                   "https://res.cloudinary.com/dkpoealta/image/upload/v1706102307/asset/Arrow_-_Down_2_gezvup.svg"

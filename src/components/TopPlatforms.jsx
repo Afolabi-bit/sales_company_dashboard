@@ -4,7 +4,7 @@ import PlatformProgress from "./PlatformProgress";
 
 const TopPlatforms = () => {
   return (
-    <div className="w-[404px] h-[494px] bg-white inline-flex flex-col items-start gap-[20px] pl-[16px] pt-[16px] pr-[32px] pb-[20px] rounded-[8px] md:w-[calc(50%_-_9px)]">
+    <div className="lg:w-[404px] h-[494px] bg-white inline-flex flex-col items-start gap-[20px] pl-[16px] pt-[16px] pr-[32px] pb-[20px] rounded-[8px] w-[calc(50%_-_9px)]">
       {/* Heading */}
       <div className="flex justify-between w-full">
         <h3 className="text-[18px] font-semibold leading-[26px]">

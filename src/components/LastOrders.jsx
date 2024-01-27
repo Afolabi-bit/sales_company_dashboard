@@ -5,37 +5,37 @@ const Orders = ({ url, name, date, amount, status }) => {
   return (
     <div className="flex justify-between items-center self-stretch pt-[10px] border-t-[1px] border-[#EDF2F6]">
       {/* Profile-pic and Name */}
-      <div className="w-[216px] flex items-center gap-[10px] md:w-[190px] ">
+      <div className="lg:w-[216px] flex items-center gap-[10px] w-[190px] ">
         <div className="w-[32px] h-[32px] rounded-[33px]">
           <img src={url} alt="profile-picture" className="w-full h-full" />
         </div>
-        <p className="text-[16px] font-medium leading-[24px] text-[#3A3F51] md:text-[14px]">
+        <p className="lg:text-[16px] font-medium leading-[24px] text-[#3A3F51] text-[14px]">
           {name}
         </p>
       </div>
 
       {/* Date */}
-      <div className="w-[116px] md:w-[90px] ">
-        <p className="text-[16px] leading-[24px] text-[#737373] md:text-[12px] ">
+      <div className="lg:w-[116px] md:w-[90px] ">
+        <p className="lg:text-[16px] leading-[24px] text-[#737373] text-[12px] ">
           {date}
         </p>
       </div>
 
       {/* Amount */}
-      <div className="w-[120px] md:w-[100px]">
-        <p className="text-[16px] font-medium leading-[24px] text-[#0D062D] md:text-[14px] ">
+      <div className="lg:w-[120px] md:w-[100px]">
+        <p className="lg:text-[16px] font-medium leading-[24px] text-[#0D062D] text-[14px] ">
           ${amount}
         </p>
       </div>
 
       {/* Status */}
-      <div className="w-[95px] md:w-[80px]">
+      <div className="lg:w-[95px] md:w-[80px]">
         {status == "Paid" ? (
-          <p className="text-[16px] leading-[24px] text-[#34caa5] md:text-[14px] ">
+          <p className="lg:text-[16px] leading-[24px] text-[#34caa5] text-[14px] ">
             {status}
           </p>
         ) : (
-          <p className="text-[16px] leading-[24px] text-[#ED544E] md:text-[14px] ">
+          <p className="lg:text-[16px] leading-[24px] text-[#ED544E] text-[14px] ">
             {status}
           </p>
         )}
@@ -57,7 +57,7 @@ const Orders = ({ url, name, date, amount, status }) => {
 
 const LastOrders = () => {
   return (
-    <section className="max-w-[806px] h-[422px] bg-white rounded-[14px] border-m py-[15px] px-[17px] md:w-full">
+    <section className=" h-[422px] bg-white rounded-[14px] border-m py-[15px] px-[17px] w-full lg:max-w-[806px]">
       {/* Heading */}
       <div className="flex flex-col gap-[14px]">
         {/* Heading */}
@@ -72,20 +72,20 @@ const LastOrders = () => {
         </div>
 
         {/* Column Headings */}
-        <div className="flex w-[766px] justify-between items-start mb-[14px] md:w-full">
-          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] w-[216px]  md:w-[190px] ">
+        <div className="flex  justify-between items-start mb-[14px] w-full ">
+          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] lg:w-[216px]  w-[190px] ">
             Name
           </p>
-          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] w-[116px]  md:w-[90px]">
+          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] lg:w-[116px]  w-[90px]">
             Date
           </p>
-          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] w-[120px]  md:w-[100px]">
+          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] lg:w-[120px]  w-[100px]">
             Amount
           </p>
-          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] w-[95px]  md:w-[80px]">
+          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] lg:w-[95px]  w-[80px]">
             Status
           </p>
-          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] w-[80px]  md:w-[80px]">
+          <p className="text-[16px] font-medium leading-[24px] text-[#9ca4ab] lg:w-[80px]  w-[80px]">
             Invoice
           </p>
         </div>

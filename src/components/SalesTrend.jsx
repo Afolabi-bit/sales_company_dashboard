@@ -26,13 +26,13 @@ const BarAndMonth = ({ month, height, containerHeight, id }) => {
           }
         >
           {/* Tooltip */}
-          <div className="tooltip absolute opacity-0 top-[-34px] left-[50%] translate-x-[-50%] w-[80px] h-[32px]">
+          <div className="tooltip absolute opacity-0 top-[-34px] left-[50%] translate-x-[-50%] md:w-[70px] lg:w-[80px] h-[32px]">
             <img
               src="https://res.cloudinary.com/dkpoealta/image/upload/v1706284897/Combined_Shape_x4ml7j.svg"
               alt="tooltip"
               className="w-[80px] h-[32px]"
             />
-            <span className="absolute top-[5px] left-[50%] translate-x-[-50%] text-white z-30 text-[12px] font-medium leading-normal inter ">
+            <span className="absolute md:top-[6px] lg:top-[5px] left-[50%] translate-x-[-50%] text-white z-30 text-[11px] lg:text-[12px] font-medium leading-normal inter ">
               {value}
             </span>
           </div>
@@ -50,7 +50,7 @@ const BarAndMonth = ({ month, height, containerHeight, id }) => {
         </div>
       </div>
 
-      <p className="text-[14px] font-semibold text-[#525252] leading-[22px] ">
+      <p className="md:text-[14px] font-semibold text-[#525252] leading-[22px] ">
         {month}
       </p>
     </div>
@@ -59,7 +59,7 @@ const BarAndMonth = ({ month, height, containerHeight, id }) => {
 
 const SalesTrend = () => {
   return (
-    <section className="w-[806px] h-[374px] flex-shrink-0 bg-white rounded-[14px] border-m py-[15px] px-[17px] md:w-full  ">
+    <section className=" h-[374px] flex-shrink-0 bg-white rounded-[14px] border-m py-[15px] px-[17px] w-full lg:w-[806px] ">
       {/* Heading */}
       <div className="flex items-center justify-between">
         <h2 className="text-[#26282C] text-[18px] font-[600] leading-[26px] ">
@@ -81,34 +81,34 @@ const SalesTrend = () => {
       </div>
 
       {/* Table */}
-      <div className="mt-[20px] flex flex-col gap-[10px] items-end md:w-full ">
+      <div className="mt-[20px] flex flex-col gap-[10px] items-end w-full ">
         {/* Chart wrapper */}
-        <div className="flex gap-[20px] md:w-full">
-          <div className="inline-flex flex-col justify-between items-start h-[255px] shrink-0 opacity-[0.56] md:w-[30px]">
-            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+        <div className="flex gap-[30px]  w-full">
+          <div className="inline-flex flex-col justify-between items-start h-[255px] shrink-0 opacity-[0.56] md:w-[30px] ">
+            <p className="lg:text-[12px] font-semibold leading-[16px] md:text-[10px]">
               50.00
             </p>
-            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+            <p className="lg:text-[12px] font-semibold leading-[16px] md:text-[10px]">
               40.00
             </p>
-            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+            <p className="lg:text-[12px] font-semibold leading-[16px] md:text-[10px]">
               30.00
             </p>
-            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+            <p className="lg:text-[12px] font-semibold leading-[16px] md:text-[10px]">
               20.0
             </p>
-            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+            <p className="lg:text-[12px] font-semibold leading-[16px] md:text-[10px]">
               10.00
             </p>
-            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+            <p className="lg:text-[12px] font-semibold leading-[16px] md:text-[10px]">
               5.000
             </p>
-            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+            <p className="lg:text-[12px] font-semibold leading-[16px] md:text-[10px]">
               0
             </p>
           </div>
 
-          <div className="relative w-[696px] h-full md:w-[calc(100%_-_50px)]">
+          <div className="relative h-full w-[calc(100%_-_50px)] lg:w-[696px]">
             {/* Background lines */}
             <div className="lines-wrapper absolute top-0 left-0 flex flex-col justify-between h-[255px] w-full items-start shrink-[0] ">
               <img

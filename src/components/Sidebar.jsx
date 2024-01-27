@@ -2,11 +2,11 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <aside className="w-[80px] relative flex flex-col py-[20px] gap-[10px] items-center shrink-0 border-r-[1px] border-r-[border] bg-[var(--sidebar-bg)] h-[876px] md:h-[1432px] ">
+    <aside className="w-[80px] relative flex flex-col py-[20px] gap-[10px] items-center shrink-0 border-r-[1px] border-r-[border] bg-[var(--sidebar-bg)]  md:h-[1432px] lg:h-[876px]">
       <div className="flex flex-col gap-[256px] items-center self-stretch relative h-full">
         <div
           id="btn-wrapper"
-          className="flex flex-col gap-[20px] items-center self-stretch md:gap-[25px]"
+          className="flex flex-col  items-center self-stretch gap-[25px] lg:gap-[20px]"
         >
           <button className="logo">
             <img
@@ -17,7 +17,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className="relative py-[4px] hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className="relative  hover:bg-[#edf2f7] transition py-[10px] lg:py-[4px]">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102329/asset/vuesax_bulk_category_i7u1ql.svg"
@@ -33,7 +33,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className="py-[4px] hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-[4px]">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102327/asset/vuesax_broken_trend-up_fnbz2s.svg"
@@ -42,7 +42,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className="py-[4px] hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-[4px]">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102325/asset/vuesax_broken_profile-2user_rg0tos.svg"
@@ -51,7 +51,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className="py-[4px] hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-[4px]">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102322/asset/vuesax_broken_box_yldp8f.svg"
@@ -60,7 +60,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className="py-[4px] hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-[4px]">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102323/asset/vuesax_broken_discount-shape_du1shb.svg"
@@ -69,7 +69,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className="py-[4px] hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-[4px]">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102324/asset/vuesax_broken_info-circle_xrri9h.svg"
@@ -78,7 +78,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className="py-[4px] hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-[4px]">
             <div className="bg-[var(--green)] w-[30px] px-[7.5px] py-[6.5px] rounded-[94px] items-center h-[30px] ">
               <img
                 src={
@@ -89,7 +89,7 @@ const Sidebar = () => {
             </div>
           </button>
 
-          <button className="py-[4px] hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-[4px]">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102316/asset/moon_1_mgtyfy.svg"
@@ -100,7 +100,7 @@ const Sidebar = () => {
         </div>
 
         <div className="flex flex-col gap-[20px] items-center w-full absolute md:bottom-[56px]">
-          <button className=" hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-0">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102322/asset/vuesax_broken_arrow-right_e7b8ju.svg"
@@ -109,7 +109,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className=" hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-0">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102323/asset/vuesax_broken_discount-shape_du1shb.svg"
@@ -118,7 +118,7 @@ const Sidebar = () => {
             />
           </button>
 
-          <button className=" hover:bg-[#edf2f7] transition md:py-[10px]">
+          <button className=" hover:bg-[#edf2f7] transition py-[10px] lg:py-0">
             <img
               src={
                 "https://res.cloudinary.com/dkpoealta/image/upload/v1706102324/asset/vuesax_broken_logout_n3jfik.svg"
