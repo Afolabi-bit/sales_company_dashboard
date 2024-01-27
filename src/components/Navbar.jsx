@@ -143,7 +143,7 @@ const Navbar = () => {
       )}
 
       {/* Popup */}
-      <div className="popup absolute px-[50px] py-[50px] pt-[80px] top-[-1050%] left-0 w-screen h-screen bg-[var(--sidebar-bg)] z-50 flex justify-between  flex-col items-center">
+      <div className="popup absolute px-[50px] py-[50px] pt-[80px] top-[-1300%] left-0 w-screen h-screen bg-[var(--sidebar-bg)] z-50 flex justify-between  flex-col items-center">
         <button
           className="absolute top-[10px] right-[10px] w-[50px] h-[50px] p-[15px] border-m rounded-[10px] hover:bg-[#edf2f7]"
           onClick={() => {
