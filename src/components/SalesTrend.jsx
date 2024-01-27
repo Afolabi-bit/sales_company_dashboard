@@ -59,7 +59,7 @@ const BarAndMonth = ({ month, height, containerHeight, id }) => {
 
 const SalesTrend = () => {
   return (
-    <section className="w-[806px] h-[374px] flex-shrink-0 bg-white rounded-[14px] border-m py-[15px] px-[17px]">
+    <section className="w-[806px] h-[374px] flex-shrink-0 bg-white rounded-[14px] border-m py-[15px] px-[17px] md:w-full  ">
       {/* Heading */}
       <div className="flex items-center justify-between">
         <h2 className="text-[#26282C] text-[18px] font-[600] leading-[26px] ">
@@ -70,7 +70,7 @@ const SalesTrend = () => {
           <p className="text-[14px] font-medium leading-[22px] mr-[10px] ">
             Short by:
           </p>
-          <button className="border-m flex gap-[10px] items-center py-[6px] px-[12px] rounded-[20px] bg-white ">
+          <button className="border-m flex gap-[10px] items-center py-[6px] px-[12px] rounded-[20px] bg-white hover:bg-[#edf2f7] transition ">
             <span className="text-[12px] leading-[16px]  ">Weekly</span>
             <img
               src="https://res.cloudinary.com/dkpoealta/image/upload/v1706102307/asset/Arrow_-_Down_2_gezvup.svg"
@@ -81,22 +81,36 @@ const SalesTrend = () => {
       </div>
 
       {/* Table */}
-      <div className="mt-[20px] flex flex-col gap-[10px] items-end ">
+      <div className="mt-[20px] flex flex-col gap-[10px] items-end md:w-full ">
         {/* Chart wrapper */}
-        <div className="flex gap-[20px]">
-          <div className="inline-flex flex-col justify-between items-start h-[255px] shrink-0 opacity-[0.56] ">
-            <p className="text-[12px] font-semibold leading-[16px]">50.00</p>
-            <p className="text-[12px] font-semibold leading-[16px]">40.00</p>
-            <p className="text-[12px] font-semibold leading-[16px]">30.00</p>
-            <p className="text-[12px] font-semibold leading-[16px]">20.0</p>
-            <p className="text-[12px] font-semibold leading-[16px]">10.00</p>
-            <p className="text-[12px] font-semibold leading-[16px]">5.000</p>
-            <p className="text-[12px] font-semibold leading-[16px]">0</p>
+        <div className="flex gap-[20px] md:w-full">
+          <div className="inline-flex flex-col justify-between items-start h-[255px] shrink-0 opacity-[0.56] md:w-[30px]">
+            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+              50.00
+            </p>
+            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+              40.00
+            </p>
+            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+              30.00
+            </p>
+            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+              20.0
+            </p>
+            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+              10.00
+            </p>
+            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+              5.000
+            </p>
+            <p className="text-[12px] font-semibold leading-[16px] md:text-[10px]">
+              0
+            </p>
           </div>
 
-          <div className="relative w-[696px] h-full ">
+          <div className="relative w-[696px] h-full md:w-[calc(100%_-_50px)]">
             {/* Background lines */}
-            <div className="absolute top-0 left-0 flex flex-col justify-between h-[255px] w-full items-start shrink-[0] ">
+            <div className="lines-wrapper absolute top-0 left-0 flex flex-col justify-between h-[255px] w-full items-start shrink-[0] ">
               <img
                 src="https://res.cloudinary.com/dkpoealta/image/upload/v1706102315/asset/Line_eswzln.svg"
                 alt="line-icon"

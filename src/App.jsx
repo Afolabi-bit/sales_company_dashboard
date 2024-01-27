@@ -3,7 +3,7 @@ import Main from "./components/MainContent";
 
 function App() {
   return (
-    <main className="flex w-full jakarta overflow-x-hidden">
+    <main className="flex w-full h-full border border-red-500 jakarta overflow-x-hidden">
       <Sidebar />
       <Main />
     </main>
