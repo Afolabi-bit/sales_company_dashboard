@@ -48,7 +48,7 @@ const TotalsCard = ({ card }) => {
           <span className=" font-[500] text-[10px] lg:text-[12px]">23.5%</span>
         </span>
         {"  "}
-        <span className="ml-[2px]  inter text-[#606060] text-[10px] lg:text-[11px]">
+        <span className="ml-[2px]  inter text-[#606060] text-[8px] md:text-[10px] lg:text-[11px]">
           {" "}
           vs. previous month
         </span>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Sidebar = () => {
   return (
-    <aside className="w-[80px] relative flex flex-col py-[20px] gap-[10px] items-center shrink-0 border-r-[1px] border-r-[border] bg-[var(--sidebar-bg)]  md:h-[1432px] lg:h-[876px]">
+    <aside className="w-[80px] relative md:flex flex-col py-[20px] gap-[10px] items-center shrink-0 border-r-[1px] border-r-[border] bg-[var(--sidebar-bg)]  md:h-[1432px] lg:h-[876px]">
       <div className="flex flex-col gap-[256px] items-center self-stretch relative h-full">
         <div
           id="btn-wrapper"

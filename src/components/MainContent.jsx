@@ -7,7 +7,7 @@ import TopPlatforms from "./TopPlatforms";
 
 const Main = () => {
   return (
-    <section className=" main bg-[var(--main-content-bg)] min-h-screen overflow-hidden md:w-[calc(100%_-_150px)]">
+    <section className=" main bg-[var(--main-content-bg)] min-h-screen overflow-hidden md:w-[calc(100%_-_80px)]">
       <Header />
       <section className="flex gap-[18px] p-[18px] justify-between flex-col w-full lg:flex-row ">
         {/* left */}

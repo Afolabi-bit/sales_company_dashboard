@@ -23,6 +23,15 @@ body {
   overflow-x: hidden;
 }
 
+.nav {
+  border-bottom: 1px solid #edf2f7;
+  box-shadow: 1px 1px 20px 1px #edf2f7;
+}
+
+#nav.active-menu .popup {
+  top: 0;
+}
+
 #btn-wrapper > button {
   width: 100%;
   display: flex;
